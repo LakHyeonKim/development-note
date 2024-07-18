@@ -76,7 +76,7 @@ spring.main.allow-bean-definition-overriding=true
 
 빈이 생성되는 순서가 런타임시 종속관계 의해 로드 되게 때문에 무엇이 우선으로 생성되고 오버라이드 될지 예측이 어렵다고 한다.
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 간단한 하게 현상을 만들어보자
 
@@ -155,13 +155,13 @@ Test\_B.class 는 내가 했던 방식이다.
 
 실행을 해보면
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 "userBean1C" 잘나오지만
 
 Test\_B.class 이 클래스 이름을 Test\_A 이름보다 빠른 순서로 바꾸면 (Test\_B.class -> ATest\_B.class)
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 AbstractTest.class 에 존재하는 빈이 나중에 뜨게된다.
 
