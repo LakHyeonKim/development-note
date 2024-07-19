@@ -161,7 +161,7 @@ Test\_B.class 는 내가 했던 방식이다.
 
 Test\_B.class 이 클래스 이름을 Test\_A 이름보다 빠른 순서로 바꾸면 (Test\_B.class -> ATest\_B.class)
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 AbstractTest.class 에 존재하는 빈이 나중에 뜨게된다.
 
