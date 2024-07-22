@@ -10,7 +10,7 @@ description: 사소한게 이렇게 장애를 만든다.
 
 
 
-Spring boot를 사용하게 되면 data-jpa 의존하여 `DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class, JpaRepositoriesAutoConfiguration.class` auto 설정들에 의해 속성으로 간단하게 datasource를 생성 할 수 있지만 해당 솔루션은 웹 페이지에서 db 커낵션을 연결 할 수 기능이 있고, 내부 로직에 동적으로 datasource를 만들어 커낵션 풀을 생성 하는 로직이 존재 했었다.
+Spring boot를 사용하게 되면 data-jpa 의존하여 `DataSourceAutoConfiguration.class`, `HibernateJpaAutoConfiguration.class`, `JpaRepositoriesAutoConfiguration.class` auto 설정들에 의해 속성으로 간단하게 datasource를 생성 할 수 있지만 해당 솔루션은 웹 페이지에서 db 커낵션을 연결 할 수 기능이 있고, 내부 로직에 동적으로 datasource를 만들어 커낵션 풀을 생성 하는 로직이 존재 했었다.
 
 ## 지금까지 해당 솔루션을 잘 사용하다가 왜 문제가 발생했나?
 
