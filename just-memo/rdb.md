@@ -24,7 +24,7 @@ UI에서 보여지는 grid 컬럼과 RDB(관계형데이터베이스) 컬럼을 
 
 아래 ERD 다이어그램을 보자
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 `CUSTOM_TABLE`: grid 컬럼의 정의 정보를 담는 테이블 (컬럼이름, 컬럼타입 등)
 
@@ -44,11 +44,11 @@ UI에서 보여지는 grid 컬럼과 RDB(관계형데이터베이스) 컬럼을 
 
 `CUSTOM_TABLE`
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 `CUSTOM_TABLE_VALUE`
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 각 컬럼에 대한 데이터가 수직으로 들어간 모습니다.
 
@@ -102,7 +102,7 @@ from (
 
 
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;원하던 결과를 볼 수 있다.
 
@@ -114,7 +114,7 @@ from (
 
 `CUSTOM_TABLE` 9 row, `CUSTOM_TABLE_VALUE` 9000 row 수행시 결과
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 나름 준수한 성능이다.
 

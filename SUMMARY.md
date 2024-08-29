@@ -16,4 +16,6 @@
   * [📒 Postgresql dead row로 인한 성능 저하](just-memo/postgresql-dead-row.md)
   * [📒 Redisson을 이용한 분산락 만들어보기](just-memo/redisson.md)
   * [📒 jdk 1.7 환경에서 Https 요청이 안되는 현상](just-memo/jdk-1.7-https.md)
+  * [📒 Web 정적데이터 캐시 하는 방법](just-memo/web.md)
+  * [📒 Mongodb GridFsTemplate 사용기](just-memo/mongodb-gridfstemplate.md)
 * [😁 Monologue](monologue.md)

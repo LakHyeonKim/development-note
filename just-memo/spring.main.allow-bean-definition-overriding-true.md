@@ -76,7 +76,7 @@ spring.main.allow-bean-definition-overriding=true
 
 빈이 생성되는 순서가 런타임시 종속관계 의해 로드 되게 때문에 무엇이 우선으로 생성되고 오버라이드 될지 예측이 어렵다고 한다.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 간단한 하게 현상을 만들어보자
 
