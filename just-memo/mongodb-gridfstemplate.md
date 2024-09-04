@@ -30,7 +30,7 @@ Spring boot 3.2.2 버전으로 업데이트로 하게되면 spring-data-mongodb 
 
 * 프로젝트 코드 일부분 (getTenantDatabase 호출을 하여 조직 데이터 베이스 이름을 가져오고 mongo client 객체에서 데이터베이스 객체를 얻어오는 로직)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 관련 코드
 
@@ -38,7 +38,7 @@ Spring boot 3.2.2 버전으로 업데이트로 하게되면 spring-data-mongodb 
 
 * 생성자
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * getGridFs()
 

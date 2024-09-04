@@ -44,11 +44,11 @@ UI에서 보여지는 grid 컬럼과 RDB(관계형데이터베이스) 컬럼을 
 
 `CUSTOM_TABLE`
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 `CUSTOM_TABLE_VALUE`
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 각 컬럼에 대한 데이터가 수직으로 들어간 모습니다.
 

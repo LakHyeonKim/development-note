@@ -42,11 +42,17 @@ Chromium 기반 브라우저의 알려진 문제 HTTPS 연결이 잘못된 인�
 
 {% embed url="https://issues.chromium.org/issues/40666473" %}
 
+### 파이어포스 vs 크롬
 
+cache-control 적용 상태이고 self signed scertificate 인 htttps를 적용 하였을 때
 
+#### 크롬
 
+<figure><img src="../.gitbook/assets/병신크롬.gif" alt=""><figcaption></figcaption></figure>
 
+#### 파이어폭스
 
+<figure><img src="../.gitbook/assets/파이어폭스.gif" alt=""><figcaption></figcaption></figure>
 
 
 
