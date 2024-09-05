@@ -340,13 +340,17 @@ export const createCoordinate = (
 
 {% embed url="https://nkia-development.github.io/hexagon-chart/?path=/docs/example-hexagonchart--docs" %}
 
-## 미리보기
+## 적용된 화면
 
 
+
+* 수량에 따른 핵사곤 배치
 
 <figure><img src="../.gitbook/assets/화면 기록 2024-09-04 오후 5.46.29.gif" alt=""><figcaption></figcaption></figure>
 
+* 네트워크 인터페이스 화면
 
+<figure><img src="../.gitbook/assets/스크린샷 2024-09-05 오전 11.07.12.png" alt=""><figcaption></figcaption></figure>
 
 
 
