@@ -118,7 +118,7 @@ export default PieSlice;
 
 여기서 호를 그릴때 주의 해야 할 사항이 있다.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>[출처] <a href="https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths#%EC%9B%90%ED%98%B8"> https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths#원호</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>[출처] <a href="https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths#%EC%9B%90%ED%98%B8"> https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Paths#원호</a></p></figcaption></figure>
 
 아래가 위 그림의 설명이다.
 
@@ -196,16 +196,68 @@ export const getPieSliceCenter = (
 
 먼저 핵사곤 좌표를 픽셀 좌표로 변환 하려면 [변환공식](https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial) 이용한다.
 
-x, y 의 기저 백터를 이용하여 변환 공식을 유도 q,  r 값에 변환 행혈
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>[출처] <a href="https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial">https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial</a></p></figcaption></figure>
+
+위 변환 공식을 사용하게 된다.
 
 
 
+`q` 는 가로로 확장되고 `r`은 세로로 확장된다. 따라서&#x20;
+
+`q` 축은 `(x = ROOT3, y = 0) , r 축은 (x = ROOT3/2, y = 3/2)` 만큼 각각 이동되며 여기에 핵사곤 `size + spacing` 까지 고려하여 변환됨
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>[출처] <a href="https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial">https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial</a></p></figcaption></figure>
+
+위 그림을 보면 q 축의 확장은 핵사곤 너비 만큼 r 축의 확장은 핵사곤 너비의 반, size의 1.5배 만큼 즉 3/2 만큼 커지는 것을 볼 수 있다.
 
 
 
+> `ROOT3`이 등장하는 이유는 핵사곤은 원의 중심에서 각 꼭지점길이가 `size`라고 가정하면 정삼각형 한변의 길이가 `size` 이고 정삼각형 꼭지점에서 밑변으로 수직으로 내린 정삼각형의 높이는 `size * cos(30) = size * (ROOT3 / 2)` 이며 따라서 핵사곤 가로 너비는 `size * ROOT 3` 이된다.&#x20;
 
 
 
-\
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>[출처] <a href="https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial">https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial</a></p></figcaption></figure>
 
+
+
+반대로 픽셀 좌표에서 핵사곤 좌표로 변환하는 방법은 위 변환 공식의 역을 구하면 된다.
+
+
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>[출처] <a href="https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial">https://www.redblobgames.com/grids/hexagons/#hex-to-pixel-axial</a></p></figcaption></figure>
+
+
+
+`s` 값은 `q + r + s = 0` 인 특징을 이용하여 구해 주면된다.
+
+
+
+위 공식으로 만들어진 코드는 아래와 같다
+
+```javascript
+// 헥사곤을 픽셀 좌표로 변환하는 함수 (pointed top)
+export const hexToPixel = (
+  hex: Hex,
+  hexSize: number,
+  spacing: number,
+): Point => {
+  const x = hexSize * (ROOT3 * hex.q + (ROOT3 / 2) * hex.r);
+  const y = hexSize * ((3 / 2) * hex.r);
+  return { x: x * spacing, y: y * spacing };
+};
+
+// 픽셀을 핵사곤으로 변환하는 함수 (pointed top)
+export const pixelToHex = (
+  x: number,
+  y: number,
+  hexSize: number,
+  spacing: number,
+): Hex => {
+  const _x = x / spacing;
+  const _y = y / spacing;
+  const q = ((ROOT3 / 3) * _x - (1 / 3) * _y) / hexSize;
+  const r = ((2 / 3) * _y) / hexSize;
+  return new Hex(q, r, -q - r);
+};
+```
 
