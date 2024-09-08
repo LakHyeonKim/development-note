@@ -44,7 +44,7 @@ UI에서 보여지는 grid 컬럼과 RDB(관계형데이터베이스) 컬럼을 
 
 `CUSTOM_TABLE`
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 `CUSTOM_TABLE_VALUE`
 

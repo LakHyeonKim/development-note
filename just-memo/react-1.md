@@ -111,7 +111,7 @@ function calculateOptimalRectSize(
 
 ### cols, rows 만 큼 q, r, s 좌표계 만들기
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>[출처] <a href="https://www.redblobgames.com/grids/hexagons/">https://www.redblobgames.com/grids/hexagons/</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>[출처] <a href="https://www.redblobgames.com/grids/hexagons/">https://www.redblobgames.com/grids/hexagons/</a></p></figcaption></figure>
 
 [react-hexgrid](https://www.npmjs.com/package/react-hexgrid?activeTab=readme) 라이브러리에서 제공하는 꼭지점이 위로 향했을 때 `q, r, s` 좌표계를 보자&#x20;
 
