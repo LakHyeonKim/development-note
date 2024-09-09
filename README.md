@@ -37,7 +37,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 * 주요 업무
   * **솔루션 개발 및 유지보수:** 모니터링 대시보드 편집기 (제품명 builder r2, r3), ETL (제품명: loader), 상면관리(제품명: DOMS) 3가지 메인 제품 관리
   * **제품 리뉴얼:** 자사 IoT 솔루션([AIOTION](http://aiotion.com/))에 사용되고 있던 <mark style="color:orange;">**데이터**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**`가공 및 플로우를 만들 수 있는 코어 소스코드를 경량화`**</mark>, 각 제품에 모듈로 탑재 하여 사업 추가 요구사항에 <mark style="color:orange;">**`필요한 REST API 개발을 대체하고 개발 공수를 대폭 줄이는 성과`**</mark>를 얻음
-  * **사업 진행:** 13 여개의 고객 사이트 모니터링 대시보드 개발 및 구축, 장애대응, 유지보수 진행
+  * **사업 진행:** <mark style="color:orange;">**`13 여개`**</mark>의 고객 사이트 모니터링 대시보드 개발 및 구축, 장애대응, 유지보수 진행
   * **카탈로그 사이트 구축:** <mark style="color:orange;">**`100곳 이상 산재되어있던 고객 사이트 구축`**</mark> 이력을 템플릿 화 하여 저장 할 수 있는 [데모 시연 사이트](http://dashboard.nkia.co.kr/demo) 개발 <mark style="color:orange;">**`제품 영업 및 POC 등 대외 홍보 시 효과적으로 사용`**</mark>
 
 
@@ -76,36 +76,87 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 
 
-## PROJECTS
+## WORK PROJECTS
 
 
 
 ### 1. 대시보드 빌더 R3&#x20;
 
-### 2. 상면관리 솔루션
+> 📁 **디자인이 들어간 시각화 모니터링 대시보드를 개발 하기위한 동시 협업 편집 툴 개발에 참여**
 
-### 3. loader etl&#x20;
+#### ROLE
+
+FE, BE, DevOps
+
+#### SPEC
+
+FE: [react](https://ko.react.dev/), [konva](https://konvajs.org/index.html), [yorkie](https://yorkie.dev/products)
+
+BE: [spring boot](https://spring.io/projects/spring-boot), [kafka](https://kafka.apache.org/), [mongodb](https://www.mongodb.com/ko-kr), [redis](https://redis.io/meeting/?gad\_source=1\&gclid=CjwKCAjwufq2BhAmEiwAnZqw8vPhkE\_GqOaYI1nsgJ0jkiuBpfLfbg7gglFGfGzwuY9ZaPFTGC-8dxoCGkcQAvD\_BwE\&utm\_campaign=gg\_s\_brand\_bam\_acq\_apac-en\_21161918358\&utm\_source=google\&utm\_medium=cpc\&utm\_content=redis\_exact\&utm\_term=)
 
 
 
-## ETC
+### 2. 상면관리 솔루션&#x20;
 
-진행 사업
+> 📁 **데이터센터 자산을 ITAM, ITSM 솔루션 데이터 기반 랙, 장비 등 실장도를 시각화 하는 솔루션 개발에 참여**
+
+#### ROLE
+
+BE, DevOps
+
+#### SPEC
+
+FE: [react](https://ko.react.dev/), [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
+
+BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring.io/projects/spring-data-jpa), [postgresql](https://www.postgresql.org/)
+
+
+
+### 3. Loader ETL
+
+> 📁 **자사 IoT 솔루션** [**AIOTION**](http://aiotion.com/) **프로젝트를 경량화하여** [**ETL**](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B6%9C,\_%EB%B3%80%ED%99%98,\_%EC%A0%81%EC%9E%AC) **기능으로 리뉴얼 및 개발에 잠여**
+
+#### ROLE
+
+BE, DevOps
+
+SPEC
+
+FE: [react](https://ko.react.dev/), canvas
+
+BE:  [spring framework](https://spring.io/projects/spring-framework), [spring boot](https://spring.io/projects/spring-boot), [postgresql](https://www.postgresql.org/), [mongodb](https://www.mongodb.com/ko-kr), [STOMP](https://docs.spring.io/spring-framework/reference/web/websocket/stomp.html), [JPA](https://spring.io/projects/spring-data-jpa)
+
+
+
+### 4. ETC
+
+#### 진행 사업
 
 부산미래교육원, 한국도로공사, 한국예탁결제원, LG CNS, 토스뱅크, 강남세브란스, SK ON, 삼성카드
 
 
 
-지원
+#### 구축 지원
 
 한국조폐공사, 우리은행
 
 
 
-장애 대응
+#### 장애대응
 
 항공우주연구원, LG CNS, 아모레퍼시픽
 
 
 
-데모 사이트 구축
+#### 데모사이트 구축
+
+
+
+## SIDE PROJECTS
+
+#### Rebalance 백엔드 개발자 (2021년 02월 \~ 2022년 06월 1년 4개월)
+
+
+
+
+
