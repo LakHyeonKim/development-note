@@ -345,7 +345,7 @@ export const getHexNeighbors = (hex: Hex): HexCoordinates[] => {
 
 
 
-isHexagonInsidePieSlice 함수를 보면 calculateHexCorners 함수로 6개의 꼭지점을 모두 구한다.&#x20;
+`isHexagonInsidePieSlice` 함수를 보면 `calculateHexCorners` 함수로 6개의 꼭지점을 모두 구한다.&#x20;
 
 단순 중심점만 비교하게되면 결국 파이의 호 밖으로 나가게 그려지기 때문이다.&#x20;
 
