@@ -17,7 +17,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 ## ABOUT ME
 
-### "가치를 찾아 나아가는 개발자 김락현입니다."
+### "개발의 본질을 좋아하는 백엔드 개발자 김락현입니다."
 
 * 프론트엔드 백엔드를 가리지 않고 웹 전반 적으로 개발을 해본 경험이 있습니다.
 * 대화와 공유, 인정과 친절을 중요하게 생각합니다.
@@ -35,12 +35,16 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 * 자사의 EMS(Enterprise Monitoring Solution), ITSM(IT Service Management), ITAM(IT Asset Management), Automation(자동화 솔루션), AIOTION(IoT 솔루션) 에서 생성되는 주요 지표 데이터를 통합하여 모니터링 대시보드를 구축하고 대시보드 솔루션을 개발
 * 백엔드 개발자 (2020년 7월 1일 \~ ) 만 4년 재직중
 * 주요 업무
-  * **솔루션 개발 및 유지보수:** 모니터링 대시보드 편집기 (제품명 builder r2, r3), ETL (제품명: loader), 상면관리(제품명: DOMS) 3가지 메인 제품 관리
-  * **제품 리뉴얼:** 자사 IoT 솔루션([AIOTION](http://aiotion.com/))에 사용되고 있던 <mark style="color:orange;">**데이터**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**`가공 및 플로우를 만들 수 있는 코어 소스코드를 경량화`**</mark>, 각 제품에 모듈로 탑재 하여 사업 추가 요구사항에 <mark style="color:orange;">**`필요한 REST API 개발을 대체하고 개발 공수를 대폭 줄이는 성과`**</mark>를 얻음
-  * **사업 진행:** <mark style="color:orange;">**`13 여개`**</mark>의 고객 사이트 모니터링 대시보드 개발 및 구축, 장애대응, 유지보수 진행
-  * **카탈로그 사이트 구축:** <mark style="color:orange;">**`100곳 이상 산재되어있던 고객 사이트 구축`**</mark> 이력을 템플릿 화 하여 저장 할 수 있는 [데모 시연 사이트](http://dashboard.nkia.co.kr/demo) 개발 <mark style="color:orange;">**`제품 영업 및 POC 등 대외 홍보 시 효과적으로 사용`**</mark>
-
-
+  * **솔루션 개발 및 유지보수**
+    * 모니터링 대시보드 편집기 (제품명 builder r2, r3), ETL (제품명: loader), 상면관리(제품명: DOMS) 3가지 메인 제품 관리
+    * 레거시 프로젝트 코드 리펙토링을 진행하여 <mark style="color:orange;">**`소나큐브 품질게이트 issue 1800여건 -> 100`**</mark> 여건으로 감소
+    * 레거시 프로젝트에서 spring datasoruce 지연 생성 부분의 결함을 찾아 해결 하여 모니터링 요청 <mark style="color:orange;">**`API 응답 속도를 4배가량 향상`**</mark> ([동적으로 생성되는 Datasource 으로 생긴 장애](https://lak-hyeon.gitbook.io/development-note/just-memo/datasource))
+  * **제품 리뉴얼**
+    * 자사 IoT 솔루션([AIOTION](http://aiotion.com/))에 사용되고 있던 <mark style="color:orange;">**데이터**</mark><mark style="color:orange;">** **</mark><mark style="color:orange;">**`가공 및 플로우를 만들 수 있는 코어 소스코드를 경량화`**</mark>, 각 제품에 모듈로 탑재 하여 사업 추가 요구사항에 <mark style="color:orange;">**`필요한 REST API 개발을 대체하고 개발 공수를 20% 줄이는 성과`**</mark>를 얻음
+  * **사업 진행**
+    * <mark style="color:orange;">**`14 여개`**</mark>의 고객 사이트 모니터링 대시보드 개발 및 구축, 장애대응, 유지보수 진행
+  * **카탈로그 사이트 구축**
+    * <mark style="color:orange;">**`100곳 이상 산재되어있던 고객 사이트 구축`**</mark> 이력을 템플릿 화 하여 저장 할 수 있는 [데모 시연 사이트](http://dashboard.nkia.co.kr/demo) 개발 <mark style="color:orange;">**`제품 영업 및 POC 등 대외 홍보 시 효과적으로 사용`**</mark>
 
 ## SKILLS
 
@@ -132,7 +136,7 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 #### 진행 사업
 
-부산미래교육원, 한국도로공사, 한국예탁결제원, LG CNS, 토스뱅크, 강남세브란스, SK ON, 삼성카드
+부산미래교육원, 한국도로공사, 한국예탁결제원, LG CNS, 토스뱅크, 강남세브란스, SK ON, 삼성카드, 한국장학재단
 
 
 
