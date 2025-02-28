@@ -6,36 +6,40 @@ description: 쉽지 않다..
 
 ## Design multiplayer undo / redo <a href="#design-multiplayer-undo--redo" id="design-multiplayer-undo--redo"></a>
 
-#### undo / redo 소개 <a href="#undo-redo" id="undo-redo"></a>
+### undo / redo 소개 <a href="#undo-redo" id="undo-redo"></a>
 
 * **undo**: 사용자 작업을 이전 상태로 되돌리는 작업
 * **redo**: 이미 되돌린 작업을 다시 수행하는 작업
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/undo-redo-diagram.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/undo-redo-diagram.png" alt=""><figcaption></figcaption></figure>
 
-#### undo / redo 구현 방법 <a href="#undo-redo" id="undo-redo"></a>
+### undo / redo 구현 방법 <a href="#undo-redo" id="undo-redo"></a>
 
 1. State 저장
    * 전체 state를 저장하여 해당 상태로 돌리는 방법
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/state-based-history.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/state-based-history (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Delta-State 저장
-   * State의 특정 시점의 변경 사항만 저장
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/delta-based-history.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+* State의 특정 시점의 변경 사항만 저장
+
+<figure><img src="../.gitbook/assets/delta-based-history.png" alt=""><figcaption></figcaption></figure>
 
 3. Action 저장
-   * State를 변경하는 행위를 저장
-   * undo 작업 시 역연산 적용 필요
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/action-based-histroy.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+* State를 변경하는 행위를 저장
+* undo 작업 시 역연산 적용 필요
 
-#### undo / redo 자료구조 <a href="#undo-redo" id="undo-redo"></a>
+<figure><img src="../.gitbook/assets/action-based-histroy.png" alt=""><figcaption></figcaption></figure>
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/structure.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+### undo / redo 자료구조 <a href="#undo-redo" id="undo-redo"></a>
 
-#### undo / redo 동시성 문제 <a href="#undo-redo" id="undo-redo"></a>
+
+
+<figure><img src="../.gitbook/assets/structure.png" alt=""><figcaption></figcaption></figure>
+
+### undo / redo 동시성 문제 <a href="#undo-redo" id="undo-redo"></a>
 
 * 동시 작업이 아닌 한 명의 사용자가 undo/redo 작업은 자연스러움
 * 하지만, 여러 사용자가 문서의 상태를 변경할 수 있고 실행 취소하면 다른 사용자가 수행한 작업이 삭제될 수 있음
@@ -44,7 +48,7 @@ description: 쉽지 않다..
 
 * **not good**
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/case1.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/case1.gif" alt=""><figcaption></figcaption></figure>
 
 > 1. A 사용자가 원을 삭제
 > 2. B 사용자가 사각형을 보라색으로 변경
@@ -52,7 +56,7 @@ description: 쉽지 않다..
 
 * **good**
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/case1-o.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/case1-o.gif" alt=""><figcaption></figcaption></figure>
 
 > 1. A 사용자가 원을 삭제
 > 2. B 사용자가 사각형을 보라색으로 변경
@@ -60,7 +64,7 @@ description: 쉽지 않다..
 
 **case2**
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/case2.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/case2.gif" alt=""><figcaption></figcaption></figure>
 
 > 1. A 사용자가 사각형을 노란색으로 변경
 > 2. B 사용자가 사각형을 삭제
@@ -68,7 +72,7 @@ description: 쉽지 않다..
 
 * **구글 슬라이드, 피그마 예시**
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/case2-o.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/case2-o.gif" alt=""><figcaption></figcaption></figure>
 
 > 1. A 사용자가 사각형을 노란색으로 변경
 > 2. B 사용자가 사각형을 삭제
@@ -76,17 +80,21 @@ description: 쉽지 않다..
 
 **ref.** [**https://liveblocks.io/blog/how-to-build-undo-redo-in-a-multiplayer-environment**](https://liveblocks.io/blog/how-to-build-undo-redo-in-a-multiplayer-environment)
 
-#### undo / redo 정리 <a href="#undo-redo" id="undo-redo"></a>
+### undo / redo 정리 <a href="#undo-redo" id="undo-redo"></a>
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/undo-redo-case.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/undo-redo-case.png" alt=""><figcaption></figcaption></figure>
 
 * 개별 클라이언트 별 history stack을 가지고 있어야 하며, 다른 유저의 행위도 존중 되어야함
 
-#### builder-r3 시행착오 <a href="#builder-r3" id="builder-r3"></a>
+### builder-r3 시행착오 <a href="#builder-r3" id="builder-r3"></a>
 
-**1. project 전역 상태를 변경이 될 때 마다 history 전역 상태로 저장 (commit log hash 584dc561)**
+#### **1. project 전역 상태를 변경이 될 때 마다 history 전역 상태로 저장**&#x20;
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/builder-case1.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+
+
+<figure><img src="../.gitbook/assets/builder-case1.gif" alt=""><figcaption></figcaption></figure>
+
+
 
 > 1. 왼쪽 사용자가 주황색 사각형을 옆으로 2칸 움직임
 > 2. 오른쪽 사용자가 주황색 사각형을 아래로 2칸 움직인 후 보라색 사각형을 생성하고 위치를 바꿈
@@ -126,13 +134,13 @@ doc.update((root) => {
 * yorkie 프록시 객체 update 함수로 변경 사항을 찾고 yorkie 서버로 반영
 * 따라서 전체의 히스토리를 알 수 있으나, 클라이언트 별 undo/redo 수행시 다른 사용자의 데이터를 의도 하지 않게 유실 되는 상황이 발생
 
-**2. 커맨드 패턴을 적용하여 undo, redo에 대한 액션을 정의, 역연산(invert operation) 적용 (commit log hash 53997926)**
+#### **2. 커맨드 패턴을 적용하여 undo, redo에 대한 액션을 정의, 역연산(invert operation) 적용 (commit log hash 53997926)**
 
 **커맨드 패턴 참고 ref.** [**https://gmlwjd9405.github.io/2018/07/07/command-pattern.html**](https://gmlwjd9405.github.io/2018/07/07/command-pattern.html)
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/commandPattern.png?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/commandPattern (1).png" alt=""><figcaption></figcaption></figure>
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/builder-case2.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/builder-case2.gif" alt=""><figcaption></figcaption></figure>
 
 > 1. 왼쪽 사용자가 초록색 사각형을 옆으로 2칸 움직임
 > 2. 오른쪽 사용자가 초록색 사각형을 아래로 2칸 움직인 후 파란색 사각형을 생성하고 위치를 바꿈
@@ -243,15 +251,15 @@ export default handleMove;
 * 클라이언트별 히스토리 기능으로 각 클라이언트가 변경내용만 undo/redo를 수행
 * 하지만 단순 순연산에 대한 역연산만 undo에 적용 시 원래 돌아가려는 상태로 가지 못함
 
-**3. 커맨드 패턴을 적용 + undo, redo 행위 이전 마지막 원격의 최신 상태를 history를 남김**
+#### **3. 커맨드 패턴을 적용 + undo, redo 행위 이전 마지막 원격의 최신 상태를 history를 남김**
 
 **builder**
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/builder-case3.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/builder-case3.gif" alt=""><figcaption></figcaption></figure>
 
 **figma**
 
-![](http://localhost:63342/markdownPreview/1026498629/design/assets/figma-case.gif?_ijt=i90rdr74aufttj7ivffftl0ovu)
+<figure><img src="../.gitbook/assets/figma-case.gif" alt=""><figcaption></figcaption></figure>
 
 > 1. 왼쪽 사용자가 갈색 사각형을 옆으로 3칸 움직임
 > 2. 오른쪽 사용자가 갈색 사각형을 아래로 3칸 움직인 후 분홍색 사각형을 생성하고 위치를 바꿈
@@ -319,7 +327,7 @@ export default handleMove;
 * 핵심은 undo, redo 수행 전 yorkie (원격 state) 의 스냅샷을 찍는 행위가 서로 다른 클라이언트가 타겟 레이어에 어떤 작업을 한 것을 반영하기 위함
 * yorkie doc은 원격에서 모든 클라이언트의 변경 로그를 순차적으로 반영하기 때문에 변경 시점은 최신 상태임'
 
-#### undo / redo 를 위한 UI 설계 <a href="#undo-redo-ui" id="undo-redo-ui"></a>
+### undo / redo 를 위한 UI 설계 <a href="#undo-redo-ui" id="undo-redo-ui"></a>
 
 **useUndoRedo.js**
 
@@ -351,7 +359,6 @@ const useUndoRedo = () => {
 export default useUndoRedo;
 ```
 
-\
 
 
 **단축키에 매핑한 부분**
@@ -440,7 +447,7 @@ export default handleMove;
 ```
 
 \
-\### 클래스를 상속받아 생성되던 커맨드 객체를 함수로 생성하도록 변경
+**클래스를 상속받아 생성되던 커맨드 객체를 함수로 생성하도록 변경**
 
 > undo / redo 를 하였을때, 최신상태를 반영하기 위해 새로운 snapshot 을 적용
 
