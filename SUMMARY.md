@@ -19,5 +19,7 @@
   * [📒 Web 정적데이터 캐시 하는 방법](just-memo/web.md)
   * [📒 Mongodb GridFsTemplate 사용기](just-memo/mongodb-gridfstemplate.md)
   * [📒 MVC 환경과 WebFlux 환경 스케줄링 성능 비교](just-memo/mvc-webflux.md)
+  * [📒 Yorkie로 동시 편집 환경에서 undo/redo 만들기](just-memo/yorkie-undo-redo.md)
   * [📒 Webflux vs WevMVC (작성중)](just-memo/webflux-vs-wevmvc.md)
+  * [📒 Mongodb replication Testcontainer](just-memo/mongodb-replication-testcontainer.md)
 * [😁 Monologue](monologue.md)
