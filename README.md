@@ -102,7 +102,7 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 **FRONT**
 
-✅ yorkie js sdk 기반  동시 편집환경에서 undo / redo 기능([Yorkie로 동시 편집 환경에서 undo/redo 만들기](https://app.gitbook.com/o/7ykix58Mm8LGwZR2TGgQ/s/ApKu6vji8JJK5hNjk7Jr/~/changes/37/just-memo/yorkie-undo-redo)) 개발 시 객체 스냅샷 전체 히스토리를 저장하여 성능 저하 이슈 ➡️ 커맨드 패턴 도입과 변경 된 데이터만 히스토리를 저장 하여 메모리 사용량을 최적화
+✅ yorkie js sdk 기반  동시 편집환경에서 undo / redo 기능([Yorkie로 동시 편집 환경에서 undo/redo 만들기](https://lak-hyeon.gitbook.io/development-note/just-memo/yorkie-undo-redo)) 개발 시 객체 스냅샷 전체 히스토리를 저장하여 성능 저하 이슈 ➡️ 커맨드 패턴 도입과 변경 된 데이터만 히스토리를 저장 하여 메모리 사용량을 최적화
 
 ✅ Konva react 객체를 재귀로 랜더링 할 경우 web view port 기준 좌표계 계산이 어려운 문제점 ➡️ 1 뎁스 랜더링으로 변경하고 레이어 간 그룹 계층 정보를 논리적으로 변경하여 쉬운 좌표계 계산 체계를 제공
 
@@ -110,7 +110,7 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 ✅ On-premise 환경에 컨테이너 기반으로 배포시 여러 서비스 모듈이 동시에 기동되면서 서비스간 초기화 작업 문제 발생 ➡️ Zookeeper + Curator framework 의 서비스 디스커버리 기능을 활용하여 의존 서비스에 따라 리스너가 호출 될 수 있도록 공통 모듈 개발
 
-✅ 모듈별 Mongodb 리플리카 환경 테스트를 위한 환경 구성 어려움 ➡️  replica set Testcontainer 도입([Mongodb replication Testcontainer](https://app.gitbook.com/o/7ykix58Mm8LGwZR2TGgQ/s/ApKu6vji8JJK5hNjk7Jr/~/changes/37/just-memo/mongodb-replication-testcontainer)) 하여 테스트를 효율적으로 할 수 있도록 변경
+✅ 모듈별 Mongodb 리플리카 환경 테스트를 위한 환경 구성 어려움 ➡️  replica set Testcontainer 도입([Mongodb replication Testcontainer](https://lak-hyeon.gitbook.io/development-note/just-memo/mongodb-replication-testcontainer)) 하여 테스트를 효율적으로 할 수 있도록 변경
 
 ✅ 대시보드 북마크를 동시에 서로 다른 사용자가 클릭시 북마크 정보가 컬랙션에 없을 경우 2개 이상 생성 문제 ➡️ 대시보드 ID를 Mongodb 유니크 키를 활용하여 동시성 제어
 
