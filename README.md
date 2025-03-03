@@ -26,8 +26,6 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 
 
-
-
 ## WORK EXPERIENCE
 
 ### [(주) Nkia](http://www.nkia.co.kr/)&#x20;
@@ -104,7 +102,7 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 ✅ yorkie js sdk 기반  동시 편집환경에서 undo / redo 기능([Yorkie로 동시 편집 환경에서 undo/redo 만들기](https://lak-hyeon.gitbook.io/development-note/just-memo/yorkie-undo-redo)) 개발 시 객체 스냅샷 전체 히스토리를 저장하여 성능 저하 이슈 ➡️ 커맨드 패턴 도입과 변경 된 데이터만 히스토리를 저장 하여 메모리 사용량을 최적화
 
-✅ Konva react 객체를 재귀로 랜더링 할 경우 web view port 기준 좌표계 계산이 어려운 문제점 ➡️ 1 뎁스 랜더링으로 변경하고 레이어 간 그룹 계층 정보를 논리적으로 변경하여 쉬운 좌표계 계산 체계를 제공
+✅ Konva react 객체를 재귀로 랜더링 할 경우 web view port 기준 좌표계 계산이 어려운 문제점 ➡️ 1 뎁스 랜더링으로 변경하고 레이어 간 그룹 계층 정보를 논리적으로 변경하여 쉬운 좌표계 계산 체계를 확립
 
 **BACK**
 
@@ -114,7 +112,9 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 ✅ 대시보드 북마크를 동시에 서로 다른 사용자가 클릭시 북마크 정보가 컬랙션에 없을 경우 2개 이상 생성 문제 ➡️ 대시보드 ID를 Mongodb 유니크 키를 활용하여 동시성 제어
 
-✅&#x20;
+✅ MVC 환경 스케줄링 작업량이 많아 질 수록 작업 지연 발생 ➡️ Spring Webflux + coroutine 스케줄러([MVC 환경과 WebFlux 환경 스케줄링 성능 비교](https://lak-hyeon.gitbook.io/development-note/just-memo/mvc-webflux))를 개발 하여 스케줄링 지연을 대폭 줄임 (5000개의 Job을 1초 간격(interval)으로 2분 동안 실행시 기존 MVC 환경 대비 <mark style="color:orange;">`56.88%의 스케줄링 지연 감소`</mark> 효과를 확인)
+
+
 
 ### 2. 상면관리 솔루션&#x20;
 
@@ -134,7 +134,11 @@ BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring
 
 ✅ 요구사항 기반 20여개의 관계테이블 설계 및 JPA entity 맵핑
 
-✅&#x20;
+✅ 랙에 자산 예약을 동시에 하여 2중 예약 발생 ➡️ Entity Version 컬럼을 두어 낙관적 락 방식 적용 하여 2중 예약 처리
+
+✅ 고객사 별 패치 시 테이블 스키바 변경 어려움 ➡️ jpa ddl option을 사용하지 않고 Liquibase 도입으로 패치로 인한 <mark style="color:orange;">**`장애를 4건에서 1건으로 감소`**</mark>
+
+✅ 2개의 네이티브 쿼리를 제외하고, <mark style="color:orange;">**`약 98%의 쿼리를 CriteriaQuery와 JPA의 함수 기반`**</mark> 쿼리로 작성
 
 ### 3. Loader ETL
 
@@ -152,9 +156,9 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 #### CONTRIBUTION DETAILS
 
-✅ hibernate core로 작성된 레파지토리 레이어 -> DATA JPA로 마이그레이션
+✅ hibernate core로 작성된 레파지토리 레이어 ➡️ Spring data jpa로 마이그레이션
 
-✅ 레파지토리를 몽고디비로 지원하기 위하여 JPA Entity -> MongoDb Document 스키마 마이그레이션
+✅ 레파지토리를 몽고디비로 지원하기 위하여 JPA Entity ➡️ MongoDb Document 스키마 마이그레이션
 
 ✅ java8 -> java17 버전 업데이트를 위한 Nashorn Javascript 엔진으로 작성된 로직을 GraalVM 으로 대체 개발
 
@@ -164,31 +168,123 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 #### 진행 사업
 
-부산미래교육원, 한국도로공사, 한국예탁결제원, LG CNS, 토스뱅크, 강남세브란스, SK ON, 삼성카드, 한국장학재단
+<details>
+
+<summary>한국장학재단</summary>
 
 
+
+</details>
+
+<details>
+
+<summary>SK ON,</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>아모레퍼시픽</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>삼성카드</summary>
+
+
+
+</details>
+
+<details>
+
+<summary> 강남세브란스</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>토스뱅크</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>LG CNS</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>한국도로공사</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>부산미래교육원</summary>
+
+
+
+</details>
+
+<details>
+
+<summary>한국예탁결제원</summary>
+
+
+
+</details>
 
 #### 구축 지원
 
-한국조폐공사, 우리은행
+<details>
+
+<summary>한국조폐공사</summary>
 
 
+
+</details>
+
+<details>
+
+<summary>우리은행</summary>
+
+
+
+</details>
 
 #### 장애대응
 
-항공우주연구원, LG CNS, 아모레퍼시픽
+<details>
+
+<summary>항공우주연구원</summary>
 
 
 
-#### 데모사이트 구축
+</details>
+
+
 
 
 
 ## SIDE PROJECTS
 
-#### Rebalance 백엔드 개발자 (2021년 02월 \~ 2022년 06월 1년 4개월)
-
-
+* Rebalance 백엔드 개발자 (2021년 02월 \~ 2022년 06월 1년 4개월)
+* 주요업무
+  *
 
 
 
