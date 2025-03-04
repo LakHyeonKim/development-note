@@ -179,7 +179,7 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 #### ✅ 아모레퍼시픽 google analytics UA -> GA4 마이그레이션 (2024.07 \~ 2024.08) <a href="#undefined" id="undefined"></a>
 
-* 9개 사이트 몰에 대한 지표 데이터에서 불필요한 **API** 요청 제거 및 리펙토링 작업 ➡️ 일 요청 1만건 이상 요청 건 수를 3천 여건으로 감소
+* 9개 사이트 몰에 대한 지표 데이터에서 불필요한 **API** 요청 제거 및 리펙토링 작업 ➡️ <mark style="color:orange;">**`일 요청 1만건 이상 요청 건 수를 3천 여건으로 감소`**</mark>
 * 고객이 지표별 수집주기를 변경 할 수 있도록 **vm option** 으로 설정 추가 개선
 
 #### ✅ 한국조폐공사, 우리은행 ITSM / ITAM 현황 대시보드 구축 (2023.12)
@@ -191,6 +191,10 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 * 공장 별 센서 데이터 테이블 크기가 수십 **GB** 이상 환경에서도 쿼리 조회 성능을 **300ms** 이하로 유지하기 위해 인덱스 추가 및 쿼리 튜닝 작업
 * 간혈적으로 옵티마이저가 인덱스를 제외하고 실행 계획을 선택하여 성능이 급격하게 저하되는 문제 ➡️ 쿼리 힌트를 명시적으로 추가하여 동일한 인덱스를 사용하도록 변경
 * 공장 설비 별 수치에 따른 알람 임계치 경우의 수가 많아서 관리가 어려운 문제 ➡️ 임계치 관리를 통합하여 관리자가 한번에 관리 할 수 있도록 개발 [실무에서 사용한 알고리즘 사례2 - 스택 계산기](https://app.gitbook.com/o/7ykix58Mm8LGwZR2TGgQ/s/ApKu6vji8JJK5hNjk7Jr/~/changes/43/just-memo/2)
+
+#### ✅ 삼성카드 - SMS 스토리지 현황 모니터링 대시보드 구축 (2021.02 \~ 2022.04) <a href="#undefined" id="undefined"></a>
+
+* 10초에 10만건 행의 데이터를 지우고 삽입하는 스케줄 **Job**으로 인하여 **Postgresql dead tuple** 이 지속적으로 증가로 전체 성능 저하 ➡️ **DB** 다운 타임을 요청하여 **Dead tuple** 정리 작업을 수행, 고객 협의 이후 배치 로직 제거 및 조회쿼리로 개선
 
 #### ✅ LG CNS 서버, DB 모니터링 대시보드 구축 (2021.02 \~ 2021.03)
 
@@ -216,6 +220,7 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 ## SIDE PROJECTS
 
 * **Rebalance** 백엔드 개발자 (2021년 02월 \~ 2022년 06월 1년 4개월)
+* [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring.io/projects/spring-data-jpa), [mysql](https://www.mysql.com/), [NCP](https://www.ncloud.com/)
 * 주요업무
   * 주식 팩터 기반 다양한 데이터를 가공하는 **데이터 파이프라인 구축** &#x20;
   * 각 모듈에서 사용하는 **공통 라이브러리 모듈 개발 및 배포** &#x20;
