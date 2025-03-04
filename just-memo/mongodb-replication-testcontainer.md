@@ -8,15 +8,15 @@ description: 이런건 테스트가 어렵더라...
 
 허나 실제 여러 노드를 set으로 구성하여 트랜잭션이 없는 로직에서는 secondry 에서 읽기 테스트를 하거나
 
-읽기, 쓰기 고려 설정에 따라 로직이 영향을 받을 수 있는지 테스트 할땐 실제 set을  구성하여 여러 상황에 따라 테스트 해볼 수 있다.
+읽기, 쓰기 고려 설정에 따라 로직이 영향을 받을 수 있는지 테스트 할땐 실제 set을  구성하여 여러 상황에 따라 테스트 해볼 필요가 있다
 
 
 
-일단 mongodb set 구성은 검색 조금만 해보면 스크립드가 다 나와있다.
+일단 mongodb set 구성은 검색 조금만 해보면 스크립드가 널리 알려져 있다
 
-그걸 테스트 컨테이너로 실행해주는거다
+이 스크립트 베이스로 컨테이너를 구성해보자
 
-바로 로직 ㄱㄱ
+바로 로직을 보자
 
 
 
@@ -120,7 +120,7 @@ public class MongoDBReplicaSetTestContainer {
 }
 ```
 
-이렇게 구성하면된다 ㅎㅎ
+이렇게 구성하면된다&#x20;
 
 
 
@@ -164,29 +164,29 @@ public enum MongoSetConfig {
 }
 ```
 
-요렇게 enum으로 mongoAlias 관리해주고 ㅎㅎ
-
-
-
-이렇게만 하면 뭐 거의 끝났다 볼 수 있지만 getConnectionString() url 로 접속해보면 안된다.&#x20;
-
-아마도 보통 localhsot:port1,localhsot:port2,localhsot:port3 이렇게 접속 하면 되긴 하는데 mongodb set url 일 경우 서로 도메인을 다 알아야 하더라고... 이말은 host 쪽에서 mongoAlias 에대한 ip 정보 알아야 한다.
-
-
-
-보통 /etc/hosts 에 127.0.0.1 mongoAlias1 mongoAlias2 mongoAlias3 이렇게 넣어주면 되긴하는데
-
 테스트 환경 마다 hosts 파일을 수정 해야하니 번거롭다.
 
+요렇게 enum으로 mongoAlias 관리해주고&#x20;
 
+
+
+이렇게만 하면 뭐 거의 끝났다 볼 수 있지만..getConnectionString() url 로 접속해보면 안된다.&#x20;
+
+아마도 보통 localhsot:port1,localhsot:port2,localhsot:port3 이렇게 접속 하면 되긴 하는데 mongodb set url 일 경우 서로 도메인을 다 알아야 한다.. host 쪽에서도 mongoAlias 에대한 ip 정보 알아야 접속이 가능하다
+
+
+
+리눅스 기준 /etc/hosts 에 127.0.0.1 mongoAlias1 mongoAlias2 mongoAlias3 이렇게 넣어주면 되긴하는데 OS 별로 hosts 파일을 수정하기 번거롭다.
+
+그래서 이를 자바에서 해결 가능하다
 
 JAVA 실행 시 도메인 이름에대한 ip 정보를 집어 넣을 수 있다. [InetAddressResolver](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/spi/InetAddressResolver.html) 를 구현해주면 된다.
 
-하지만... 이 인터페이스는 java 18 부터 사용 할 수 있고 나의 프로젝트는 17임...ㅅㅂ
+하지만... 이 인터페이스는 java 18 부터 사용 할 수 있고 나의 프로젝트는 17이라 없다
 
 
 
-근데 이 mongodb 드라이버는 이럴줄 알고 java 낮은 버전에서 사용 할 수 있게 해둔게 있더라고 ㅎㅎ 역시 천조국 개발자들이여 ㅎㅎ
+하지만 이 mongodb 드라이버는 이럴줄 알고 java 낮은 버전에서 사용 할 수 있게 해둔게 있더라고 역시 천조국 개발자👍
 
 
 
@@ -232,9 +232,7 @@ public class LocalHostMongoResolver implements InetAddressResolver {
 }
 ```
 
-com.mongodb.spi.dns.InetAddressResolver 이건 진짜 우연하게 찾았는데 hosts 파일 수정 없이 어떻게 ip 등록할까 고민하다가  이친구들 github 들어가서 심심해서 검색을 했는데 InetAddressResolver 이걸로 ㅋㅋㅋ 있더라고&#x20;
-
-방법도 유사하길래 ㅋㅋㅋ 했더니 됐음 개꿀 \~\~
+com.mongodb.spi.dns.InetAddressResolver 이건 진짜 우연하게 찾았는데 hosts 파일 수정 없이 어떻게 ip 등록할까 고민하다가  이친구들 github 들어가서 심심해서 인터페이스 이름으로 검색을 했는데 있었다 👊
 
 
 
@@ -317,10 +315,10 @@ public abstract class MongoReplicaSetManualDynamicPropertiesTest {
   }
 ```
 
-대충 저렇게 테스트 돌려보면 ㅎㅎ 읽기는 REPLICA\_SET\_SECONDARY 여기서 읽게 했는데 잘되는지 확인 코드임
-
-
+테스트 돌려보면 읽기는 REPLICA\_SET\_SECONDARY 에서 읽게되는데 의도 한 대로 잘 동작한다
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 크으으으으 굿\~
+
+이제 이코드 베이스로 여러 상황에 맞는 테스트 코드를 작성 해볼수 있다👍
