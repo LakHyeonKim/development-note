@@ -139,7 +139,7 @@ BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring
 
 ✅ 랙에 자산 예약을 동시에 하여 2중 예약 발생 ➡️ **Entity Version** 컬럼을 두어 낙관적 락 방식 적용 하여 2중 예약 로직 보완
 
-✅ 고객사 별 패치 시 테이블 스키바 변경 어려움 ➡️ **jpa ddl option**을 사용하지 않고 **Liquibase** 도입으로 패치로 인한 <mark style="color:orange;">**`장애를 4건에서 1건으로 감소`**</mark>
+✅ 고객사 별 패치 시 테이블 스키마 변경 어려움 ➡️ **jpa ddl option**을 사용하지 않고 **Liquibase** 도입으로 패치로 인한 <mark style="color:orange;">**`장애를 4건에서 1건으로 감소`**</mark>
 
 ✅ 2개의 네이티브 쿼리를 제외하고, <mark style="color:orange;">**`약 98%의 쿼리를 CriteriaQuery와 JPA의 함수 기반`**</mark> 쿼리로 작성
 
@@ -180,7 +180,7 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 #### ✅ 아모레퍼시픽 google analytics UA -> GA4 마이그레이션 (2024.07 \~ 2024.08) <a href="#undefined" id="undefined"></a>
 
 * 9개 사이트 몰에 대한 지표 데이터에서 불필요한 **API** 요청 제거 및 리펙토링 작업 ➡️ <mark style="color:orange;">**`일 요청 1만건 이상 요청 건 수를 3천 여건으로 감소`**</mark>
-* 고객이 지표별 수집주기를 변경 할 수 있도록 **vm option** 으로 설정 추가 개선
+* 고객이 지표 별 수집주기를 변경 할 수 있도록 **vm option** 으로 설정 추가 개선
 
 #### ✅ 한국조폐공사, 우리은행 ITSM / ITAM 현황 대시보드 구축 (2023.12)
 
