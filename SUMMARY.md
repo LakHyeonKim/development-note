@@ -1,6 +1,6 @@
 # Table of contents
 
-* [😀 introduction](README.md)
+* [😀 Introduction](README.md)
 * [🤪 Just memo](just-memo/README.md)
   * [📒 RDB 동적으로 그리드 컬럼을 바꿀 수 있는 테이블 구조](just-memo/rdb.md)
   * [📒 spring.main.allow-bean-definition-overriding=true 로 인한 교훈](just-memo/spring.main.allow-bean-definition-overriding-true.md)
