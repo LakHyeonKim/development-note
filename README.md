@@ -145,7 +145,7 @@ BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring
 
 ### 3. Loader ETL
 
-> 📁 **자사 IoT 솔루션** [**AIOTION**](http://aiotion.com/) **프로젝트를 경량화하여** [**ETL**](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B6%9C,_%EB%B3%80%ED%99%98,_%EC%A0%81%EC%9E%AC) **기능으로 리뉴얼 및 개발에 잠여**
+> 📁 **자사 IoT 솔루션** [**AIOTION**](http://aiotion.com/) **프로젝트를 경량화하여** [**ETL**](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B6%9C,_%EB%B3%80%ED%99%98,_%EC%A0%81%EC%9E%AC) **기능으로 리뉴얼 및 개발에 참여**
 
 #### ROLE
 
