@@ -38,7 +38,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
     * 레거시 프로젝트 코드 리펙토링을 진행하여 <mark style="color:orange;">**`소나큐브 품질게이트 issue 1800여건 -> 100`**</mark> 여건으로 감소
     * 레거시 프로젝트에서 spring datasoruce 지연 생성 부분의 결함을 찾아 해결 하여 모니터링 요청 <mark style="color:orange;">**`API 응답 속도를 4배가량 향상`**</mark> ([동적으로 생성되는 Datasource 으로 생긴 장애](https://lak-hyeon.gitbook.io/development-note/just-memo/datasource))
   * **제품 리뉴얼**
-    * 자사 IoT 솔루션([AIOTION](http://aiotion.com/))에 사용되고 있던 <mark style="color:orange;">**데이터**</mark><mark style="color:orange;">**&#x20;**</mark><mark style="color:orange;">**`가공 및 파이프라인를 만들 수 있는 코어 소스코드를 경량화`**</mark>, 각 제품에 모듈로 탑재 하여 사업 추가 요구사항에 <mark style="color:orange;">**`필요한 REST API 개발을 대체하고 개발 공수를 20% 줄이는 성과`**</mark>를 얻음
+    * 자사 IoT 솔루션([AIOTION](http://aiotion.com/))에 사용되고 있던 <mark style="color:orange;">**`데이터 가공 및 파이프라인를 만들 수 있는 코어 소스코드를 경량화`**</mark>, 각 제품에 모듈로 탑재 하여 사업 추가 요구사항에 <mark style="color:orange;">**`필요한 REST API 개발을 대체하고 개발 공수를 20% 줄이는 성과`**</mark>를 얻음
   * **사업 진행**
     * <mark style="color:orange;">**`14 여개`**</mark>의 고객 사이트 모니터링 대시보드 개발 및 구축, 장애대응, 유지보수 진행
   *   **카탈로그 사이트 구축**
