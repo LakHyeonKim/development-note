@@ -55,7 +55,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 ### :clap: Frameworks
 
-<div><figure><img src=".gitbook/assets/React.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Boot.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Framework.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_MVC.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Webflux.svg" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src=".gitbook/assets/React.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Boot.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Framework.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_MVC.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Webflux.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotlin_Coroutines.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: ORM Frameworks
 
@@ -75,9 +75,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 ### :clap: Testing
 
-<div><figure><img src=".gitbook/assets/Jest.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JaCoCo.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JUnit5.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/SonarQube.svg" alt=""><figcaption></figcaption></figure></div>
-
-
+<div><figure><img src=".gitbook/assets/Jest.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JaCoCo.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JUnit5.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/SonarQube.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotest.svg" alt=""><figcaption></figcaption></figure></div>
 
 
 
