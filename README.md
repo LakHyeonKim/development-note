@@ -3,7 +3,7 @@ description: Let me introduce myself.
 coverY: 0
 ---
 
-# 😀 introduction
+# 😀 Introduction
 
 ## 김락현
 
@@ -51,31 +51,31 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 ### :clap: Languages
 
-![](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black) ![](https://img.shields.io/badge/Java-007396?style=for-the-badge\&logo=java\&logoColor=white) ![](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge\&logo=kotlin\&logoColor=white)
+<div><figure><img src=".gitbook/assets/TypeScript.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JavaScript.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Java.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotlin.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Frameworks
 
-![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=black) ![ ](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge\&logo=spring-boot\&logoColor=white) ![ ](https://img.shields.io/badge/Spring%20Framework-6DB33F?style=for-the-badge\&logo=spring\&logoColor=white) ![ ](https://img.shields.io/badge/Spring%20MVC-6DB33F?style=for-the-badge\&logo=spring\&logoColor=white) ![ ](https://img.shields.io/badge/Spring%20Webflux-6DB33F?style=for-the-badge\&logo=spring\&logoColor=white)
+<div><figure><img src=".gitbook/assets/React.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Boot.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Framework.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_MVC.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Webflux.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: ORM Frameworks
 
-![](https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge\&logo=hibernate\&logoColor=white) ![](https://img.shields.io/badge/MyBatis-E76F00?style=for-the-badge\&logo=mybatis\&logoColor=white)
+<div><figure><img src=".gitbook/assets/JPA.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/MyBatis.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Databases
 
-![](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white) ![](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge\&logo=redis\&logoColor=white) ![](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge\&logo=postgresql\&logoColor=white) ![](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge\&logo=oracle\&logoColor=white) ![](https://img.shields.io/badge/Tibero-E54D26?style=for-the-badge\&logo=tibero\&logoColor=white) ![](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+<div><figure><img src=".gitbook/assets/MongoDB.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Redis.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/PostgreSQL.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Oracle.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Tibero.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/MySQL.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Messaging
 
-![](https://img.shields.io/badge/Apache%20Kafka-231F20?style=for-the-badge\&logo=apache-kafka\&logoColor=white)
+<figure><img src=".gitbook/assets/Kafka.svg" alt=""><figcaption></figcaption></figure>
 
 ### :clap: CI/CD & Containerization
 
-![](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge\&logo=jenkins\&logoColor=white) ![](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+<div><figure><img src=".gitbook/assets/Jenkins.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Docker.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Testing
 
-![](https://img.shields.io/badge/Jest-C21325?style=for-the-badge\&logo=jest\&logoColor=white) ![](https://img.shields.io/badge/JaCoCo-EC2025?style=for-the-badge\&logo=jacoco\&logoColor=white) ![](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge\&logo=junit5\&logoColor=white) ![](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge\&logo=sonarqube\&logoColor=white)
+<div><figure><img src=".gitbook/assets/Jest.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JaCoCo.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JUnit5.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/SonarQube.svg" alt=""><figcaption></figcaption></figure></div>
 
 
 
