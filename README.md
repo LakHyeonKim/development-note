@@ -15,7 +15,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 
 
-## ABOUT ME
+## 핵심 역량
 
 ### "개발의 본질을 좋아하는 백엔드 개발자 김락현입니다."
 
@@ -26,7 +26,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 
 
-## WORK EXPERIENCE
+## 업무 & 경험
 
 ### [(주) Nkia](http://www.nkia.co.kr/)&#x20;
 
@@ -43,45 +43,45 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
     * <mark style="color:orange;">**`14 여개`**</mark>의 고객 사이트 모니터링 대시보드 개발 및 구축, 장애대응, 유지보수 진행
   *   **카탈로그 사이트 구축**
 
-      * <mark style="color:orange;">**`100곳 이상 산재되어있던 고객 사이트 구축`**</mark> 이력을 템플릿 화 하여 저장 할 수 있는 [데모 시연 사이트](http://dashboard.nkia.co.kr/demo) 개발 <mark style="color:orange;">**`제품 영업 및 POC 등 대외 홍보 시 효과적으로 사용`**</mark>
+      * <mark style="color:orange;">**`100개 이상 산재되어있던 고객 사이트 구축`**</mark> 이력을 템플릿화하여 저장 가능한 [데모 시연 사이트](http://dashboard.nkia.co.kr/demo) 개발 <mark style="color:orange;">**`제품 영업 및 POC 등 대외 홍보 시 효과적으로 사용`**</mark>
 
 
 
-## SKILLS
+## 기술 스택
 
 ### :clap: Languages
 
-<div><figure><img src=".gitbook/assets/TypeScript.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JavaScript.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Java.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotlin.svg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/TypeScript.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JavaScript.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Java.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotlin.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Frameworks
 
-<div><figure><img src=".gitbook/assets/React.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Boot.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Framework.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_MVC.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Webflux.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotlin_Coroutines.svg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/Spring_Boot.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Framework.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_MVC.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Spring_Webflux.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/React.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: ORM Frameworks
 
-<div><figure><img src=".gitbook/assets/JPA.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/MyBatis.svg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/JPA.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/MyBatis.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Databases
 
-<div><figure><img src=".gitbook/assets/MongoDB.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Redis.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/PostgreSQL.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Oracle.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Tibero.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/MySQL.svg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/MongoDB.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Redis.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/PostgreSQL.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Oracle.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Tibero.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/MySQL.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Messaging
 
-<figure><img src=".gitbook/assets/Kafka.svg" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src=".gitbook/assets/Kafka.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: CI/CD & Containerization
 
-<div><figure><img src=".gitbook/assets/Jenkins.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Docker.svg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/Jenkins.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Docker.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/SonarQube.svg" alt=""><figcaption></figcaption></figure></div>
 
 ### :clap: Testing
 
-<div><figure><img src=".gitbook/assets/Jest.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JaCoCo.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JUnit5.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/SonarQube.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Kotest.svg" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/Kotest.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JUnit5.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/JaCoCo.svg" alt=""><figcaption></figcaption></figure> <figure><img src=".gitbook/assets/Jest.svg" alt=""><figcaption></figcaption></figure></div>
 
 
 
-## WORK PROJECTS
+## 프로젝트 주요 경험
 
-### 1. 대시보드 빌더 R3&#x20;
+### 1. 대시보드 빌더 R3 (2023.07 \~ 진행 및 운영 중)
 
 > 📁 **디자인이 들어간 시각화 모니터링 대시보드를 개발 하기위한 동시 협업 편집 툴 개발에 참여**
 
@@ -117,7 +117,7 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 
 
-### 2. 상면관리 솔루션&#x20;
+### 2. 상면관리 솔루션 (2023.01 \~ 2023.06)
 
 > 📁 **데이터센터 자산을 ITAM, ITSM 솔루션 데이터 기반 랙, 장비 등 실장도를 시각화 하는 솔루션 개발에 참여**
 
@@ -137,13 +137,13 @@ BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring
 
 ✅ 랙에 자산 예약을 동시에 하여 2중 예약 발생 ➡️ **Entity Version** 컬럼을 두어 낙관적 락 방식 적용 하여 2중 예약 로직 보완
 
-✅ 고객사 별 패치 시 테이블 스키마 변경 어려움 ➡️ **jpa ddl option**을 사용하지 않고 **Liquibase** 도입으로 패치로 인한 <mark style="color:orange;">**`장애를 4건에서 1건으로 감소`**</mark>
+✅ 고객사 별 패치 시 테이블 스키마 변경 대응이 어려움 ➡️ **JPA DDL Option**을 사용하지 않고 **Liquibase** 도입으로 변경된 테이블 스키마를 버전별로 이력을 관리 하여 패치로 인한 <mark style="color:orange;">**`장애를 4건에서 1건으로 감소`**</mark>
 
 ✅ 2개의 네이티브 쿼리를 제외하고, <mark style="color:orange;">**`약 98%의 쿼리를 CriteriaQuery와 JPA의 함수 기반`**</mark> 쿼리로 작성
 
 
 
-### 3. Loader ETL
+### 3. Loader ETL (2022.09 \~ 2022.12)
 
 > 📁 **자사 IoT 솔루션** [**AIOTION**](http://aiotion.com/) **프로젝트를 경량화하여** [**ETL**](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B6%9C,_%EB%B3%80%ED%99%98,_%EC%A0%81%EC%9E%AC) **기능으로 리뉴얼 및 개발에 참여**
 
@@ -169,7 +169,7 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 
 
-### 4. ETC (Professional Projects & Experience)
+### 4. ETC (사업 프로젝트)
 
 #### ✅ 한국장학재단 통합 인프라 모니터링 대시보드 구축 (2024.10 \~ 2024.11)
 
@@ -215,9 +215,10 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 
 
-## SIDE PROJECTS
+## 사이드 프로젝트
 
 * **Rebalance** 백엔드 개발자 (2021년 02월 \~ 2022년 06월 1년 4개월)
+* 팩터 기반 주식 포트폴리오의 벤치마킹 및 특정 기간 리밸런싱을 자동화하는 어플리케이션 개발에 참여
 * [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring.io/projects/spring-data-jpa), [mysql](https://www.mysql.com/), [NCP](https://www.ncloud.com/)
 * 주요업무
   * 주식 팩터 기반 다양한 데이터를 가공하는 **데이터 파이프라인 구축** &#x20;
