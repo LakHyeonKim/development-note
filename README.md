@@ -21,7 +21,7 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 * 프론트엔드 백엔드를 가리지 않고 웹 전반 적으로 개발을 해본 경험이 있습니다.
 * 대화와 공유, 인정과 친절을 중요하게 생각합니다.
-* 관계형데이터 베이스, mongodb 등 특징에 맞게 효율적으로 스키마 설계를 할 수 있습니다.
+* 관계형데이터 베이스, Mongodb 등 특징에 맞게 효율적으로 스키마 설계를 할 수 있습니다.
 * 여러 사례의 트러블 슈팅을 해결 해본 적이 있고, 이런 문제를 해결하는 것을 즐깁니다.
 
 
@@ -99,9 +99,9 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 **FE**
 
-✅ **yorkie js sdk** 기반  동시 편집환경에서 **undo / redo** 기능([Yorkie로 동시 편집 환경에서 undo/redo 만들기](https://lak-hyeon.gitbook.io/development-note/just-memo/yorkie-undo-redo)) 개발 시 객체 스냅샷 전체 히스토리를 저장하여 메모리 오버플로우 발생 ➡️ 커맨드 패턴 도입과 변경 된 데이터만 히스토리를 저장 하여 메모리 사용량을 최적화
+✅ **Yorkie js sdk** 기반  동시 편집환경에서 **undo / redo** 기능([Yorkie로 동시 편집 환경에서 undo/redo 만들기](https://lak-hyeon.gitbook.io/development-note/just-memo/yorkie-undo-redo)) 개발 시 객체 스냅샷 전체 히스토리를 저장하여 메모리 오버플로우 발생 ➡️ 커맨드 패턴 도입과 변경 된 데이터만 히스토리를 저장 하여 메모리 사용량을 최적화
 
-✅ **Konva react** 객체를 재귀로 랜더링 할 경우 **web view port** 기준 좌표계 계산이 어려운 문제점 ➡️ 1 뎁스 랜더링으로 변경하고 레이어 간 그룹 계층 정보를 논리적으로 변경하여 쉬운 좌표계 계산 체계를 확립
+✅ **Konva react** 객체를 재귀로 랜더링 할 경우 **Web view port** 기준 좌표계 계산이 어려운 문제점 ➡️ 1 뎁스 랜더링으로 변경하고 레이어 간 그룹 계층 정보를 논리적으로 변경하여 쉬운 좌표계 계산 체계를 확립
 
 **BE**
 
@@ -113,7 +113,7 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 ✅ **MVC** 환경 스케줄링 작업량이 많아 질 수록 작업 지연 발생 ➡️ **Spring Webflux + coroutine** 스케줄러([MVC 환경과 WebFlux 환경 스케줄링 성능 비교](https://lak-hyeon.gitbook.io/development-note/just-memo/mvc-webflux))를 개발 하여 스케줄링 지연을 대폭 줄임 (5000개의 Job을 1초 간격으로 2분 동안 실행 시 기존 MVC 환경 대비 <mark style="color:orange;">**`56.88%의 스케줄링 지연 감소`**</mark> 효과)
 
-✅ **yorkie project** [**discord** 버그 제보](https://discord.com/channels/928301813785038878/1049208669964877845/1176434400343375894) 및 [**yorkie disign** 문서 오타 PR](https://github.com/yorkie-team/yorkie/pull/633)&#x20;
+✅ **Yorkie project** [**discord** 버그 제보](https://discord.com/channels/928301813785038878/1049208669964877845/1176434400343375894) 및 [**Yorkie disign** 문서 오타 **PR** ](https://github.com/yorkie-team/yorkie/pull/633)
 
 
 
@@ -159,11 +159,11 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 
 #### 주요 기여 사항
 
-✅ **hibernate core**로 작성된 레파지토리 레이어 ➡️ **Spring data jpa**로 마이그레이션
+✅ **Hibernate core**로 작성된 레파지토리 레이어 ➡️ **Spring data JPA**로 마이그레이션
 
 ✅ 레파지토리를 몽고디비로 지원하기 위하여 **JPA Entity** ➡️ **MongoDb Document** 스키마 마이그레이션
 
-✅ **java8 -> java17** 버전 업데이트를 위한 **Nashorn Javascript** 엔진으로 작성된 로직을 **GraalVM** 으로 대체 개발&#x20;
+✅ **Java8 -> Java17** 버전 업데이트를 위한 **Nashorn Javascript** 엔진으로 작성된 로직을 **GraalVM** 으로 대체 개발&#x20;
 
 ✅ 여러 프로젝트에 이식하여 사용 할 수 있도록 모듈 개발 하여 사내 레파지토리 배포
 
