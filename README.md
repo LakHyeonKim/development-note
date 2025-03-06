@@ -79,31 +79,31 @@ Blog: [https://lak-hyeon.gitbook.io/development-note/](https://lak-hyeon.gitbook
 
 
 
-## 프로젝트 주요 경험
+## 프로젝트
 
 ### 1. 대시보드 빌더 R3 (2023.07 \~ 진행 및 운영 중)
 
 > 📁 **디자인이 들어간 시각화 모니터링 대시보드를 개발 하기위한 동시 협업 편집 툴 개발에 참여**
 
-#### ROLE
+#### 역할
 
 FE, BE, DevOps
 
-#### SPEC
+#### 기술 스택
 
 FE: [react](https://ko.react.dev/), [konva](https://konvajs.org/index.html), [yorkie](https://yorkie.dev/products)
 
 BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](https://docs.spring.io/spring-framework/reference/web/webflux.html) + [kotlin coroutines](https://kotlinlang.org/docs/coroutines-overview.html), [kafka](https://kafka.apache.org/), [mongodb](https://www.mongodb.com/ko-kr), [redis](https://redis.io/meeting/?gad_source=1\&gclid=CjwKCAjwufq2BhAmEiwAnZqw8vPhkE_GqOaYI1nsgJ0jkiuBpfLfbg7gglFGfGzwuY9ZaPFTGC-8dxoCGkcQAvD_BwE\&utm_campaign=gg_s_brand_bam_acq_apac-en_21161918358\&utm_source=google\&utm_medium=cpc\&utm_content=redis_exact\&utm_term=)
 
-#### CONTRIBUTION DETAILS
+#### 주요 기여 사항
 
-**FRONT**
+**FE**
 
 ✅ **yorkie js sdk** 기반  동시 편집환경에서 **undo / redo** 기능([Yorkie로 동시 편집 환경에서 undo/redo 만들기](https://lak-hyeon.gitbook.io/development-note/just-memo/yorkie-undo-redo)) 개발 시 객체 스냅샷 전체 히스토리를 저장하여 메모리 오버플로우 발생 ➡️ 커맨드 패턴 도입과 변경 된 데이터만 히스토리를 저장 하여 메모리 사용량을 최적화
 
 ✅ **Konva react** 객체를 재귀로 랜더링 할 경우 **web view port** 기준 좌표계 계산이 어려운 문제점 ➡️ 1 뎁스 랜더링으로 변경하고 레이어 간 그룹 계층 정보를 논리적으로 변경하여 쉬운 좌표계 계산 체계를 확립
 
-**BACK**
+**BE**
 
 ✅ **On-premise** 환경에 컨테이너 기반으로 배포시 여러 서비스 모듈이 동시에 기동되면서 서비스간 초기화 작업 문제 발생 ➡️ **Zookeeper + Curator framework** 의 서비스 디스커버리 기능을 활용하여 의존 서비스에 따라 리스너가 호출 될 수 있도록 공통 모듈 개발
 
@@ -121,17 +121,17 @@ BE: [spring boot](https://spring.io/projects/spring-boot),  [spring webflux](htt
 
 > 📁 **데이터센터 자산을 ITAM, ITSM 솔루션 데이터 기반 랙, 장비 등 실장도를 시각화 하는 솔루션 개발에 참여**
 
-#### ROLE
+#### 역할
 
 BE, DevOps
 
-#### SPEC
+#### 기술 스택
 
 FE: [react](https://ko.react.dev/), [react-three-fiber](https://github.com/pmndrs/react-three-fiber)
 
 BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring.io/projects/spring-data-jpa), [postgresql](https://www.postgresql.org/)
 
-#### CONTRIBUTION DETAILS
+#### 주요 기여 사항
 
 ✅ 요구사항 기반 20여개의 관계테이블 설계 및 **JPA entity** 맵핑
 
@@ -147,17 +147,17 @@ BE:  [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring
 
 > 📁 **자사 IoT 솔루션** [**AIOTION**](http://aiotion.com/) **프로젝트를 경량화하여** [**ETL**](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%B6%9C,_%EB%B3%80%ED%99%98,_%EC%A0%81%EC%9E%AC) **기능으로 리뉴얼 및 개발에 참여**
 
-#### ROLE
+#### 역할
 
 BE, DevOps
 
-#### SPEC
+#### 기술 스택
 
 FE: [react](https://ko.react.dev/), canvas
 
 BE:  [spring framework](https://spring.io/projects/spring-framework), [spring boot](https://spring.io/projects/spring-boot), [postgresql](https://www.postgresql.org/), [mongodb](https://www.mongodb.com/ko-kr), [STOMP](https://docs.spring.io/spring-framework/reference/web/websocket/stomp.html), [JPA](https://spring.io/projects/spring-data-jpa)
 
-#### CONTRIBUTION DETAILS
+#### 주요 기여 사항
 
 ✅ **hibernate core**로 작성된 레파지토리 레이어 ➡️ **Spring data jpa**로 마이그레이션
 
@@ -218,7 +218,7 @@ BE:  [spring framework](https://spring.io/projects/spring-framework), [spring bo
 ## 사이드 프로젝트
 
 * **Rebalance** 백엔드 개발자 (2021년 02월 \~ 2022년 06월 1년 4개월)
-* 팩터 기반 주식 포트폴리오의 벤치마킹 및 특정 기간 리밸런싱을 자동화하는 어플리케이션 개발에 참여
+* 팩터 기반 주식 포트폴리오의 벤치마킹 및 특정 기간 리밸런싱 결과를 확인하여 주식 매매 시 참고 할 수 있는 어플리케이션 개발에 참여
 * [spring boot](https://spring.io/projects/spring-boot), [JPA](https://spring.io/projects/spring-data-jpa), [mysql](https://www.mysql.com/), [NCP](https://www.ncloud.com/)
 * 주요업무
   * 주식 팩터 기반 다양한 데이터를 가공하는 **데이터 파이프라인 구축** &#x20;
